@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        #tophead{
+            width:100vw;
+            display: flex;
+            justify-content: space-between;
+            
+            
+            
+        }
+        #tophead>img{
+            margin: auto;
+            padding-left: 80px;
+        }
+        #tophead>div{
+            width:10%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            padding-right: 50px;
+           
+            
+        }
+       #tophead>div img{
+        width:20px;
+        display: flex;
+        justify-content: space-around;
+       }
+       #select{
+        width:80%;
+        margin: auto;
+        
+        padding: 5px 5px;
+        display: flex;
+        justify-content: space-between;
+       }
+       #select a{
+        font-weight: bold;
+        color: black;
+        font-size: 15px;
+        
+        
+       }
+       a:link{
+        text-decoration: none;
+       }
+
+       #beauty,#men,#interiors,#lifestyle{
+        border: 0px;
+       }
+       select:hover{
+        color:crimson;
+       }
+
+       #cruserbox{
+        width:80vw;
+        
+        margin: auto;
+       
+       }
+
+       #cruser{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(1,auto);
+        gap: 10px;
+       }
+      
+       #cruser>div{
+        border:22%;
+       
+       }
+
+       #cruser>div img{
+        width:100%;
+       }
+
+       #cruser p{
+        font-weight: bold;
+        color: blueviolet;
+       }
+
+       #cruser a{
+        width: 100%;
+        font-size: 30px;
+        color:black;
+        margin-bottom: 10px;
+        
+        
+        
+       }
+       #cruser a:hover{
+        text-decoration: underline;
+       }
+       
+
+
+
+    </style>
+</head>
+<body>
+    <div id="tophead" >
+        <img src="https://de927adv5b23k.cloudfront.net/wp-content/uploads/2019/05/24170311/TheUrbanGuideLogo_UrbanCompany_Transparent_Big-Copy-Copy.png">
+        <div  >
+            <img src="data:image/webp;base64,UklGRrACAABXRUJQVlA4WAoAAAAQAAAAhAAAhAAAQUxQSDEAAAARDzD/ERFCUSRJDZnnScC/q5NB5jmngIro/wToo66juFG9SAwebj8DF4nBRrWjqMgBAFZQOCBYAgAAcBEAnQEqhQCFAD6RRptJpaQioSsWSFCwEgljbt1e8Z0EVfpNPVxefZ7ay7oqdndSwxtPlYspRTcUAgANio9S1X8EUL2lCRsvCk64oAMXwpOZUc6ah1jLxpftQHXT0ji9/Y0lntMyRG/bA9Y7XgeKKI0cDr+qaEGv9RyUu9FS1ntPlWearS7K2djhCB3U2T0BOZPkgAD+7L/yA/81ZkOJ1O3scsRDFFKD7ovjMgKPdbUFhne/dCmCLmg18y8BUIYvXA2IDa7AgdQ9SM8suL3I87jstSq/e9bfmsLLKPa4nA+uDuFCcm+EmBCkzAPhACRqg6L7K0ldMhAzAeM1KFyAFyrjxqO19eC19xY5MAhCBRuCpJXGzJYALZ/mEsqxHOp4NSwjnNdDZf+jf+OUfPv9Tzb+E9QjvEX7Whg+qLjvusqSj7Wygx5u/p4q3lbEzmQ1a4Hif1oSjjzgV40200kcfmrYBhfKuEoQ7tNiBKLXzHbZLSHaB6adeaQe/Phs1S7FZ/dt5QFc70kwxQ2a/fU3Lfn40c3rrGqWH8YRGtt/YpALE46PRZTVJ41HCT6EUwsttaPcrNFo24dw0VKj3bllymWA5wjigFowvmLA/Ci1SIY8c19QT6mndvaoo4cMvXadEyORhdVPWyhM/RS/pgYCXX8tYWPpCWW4WBmwJunwfgMBDt9OXx+IpXehfRi06xOAT4gGwC4J0xgYgOoiXFgQ+jmu7Gf0qWJbfUdZVMJ3qQl5JasOb9+90j1jP3aXO+f3NbExvvcmqwFjg3SJoIxX3Nsa6IxkWAAA" alt="fb"/>
+            <img src="data:image/png;base64,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" alt=""/>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIUAAACFCAMAAABCBMsOAAAAUVBMVEX///9Vre5Mqu1HqO3u9v32+v75/P53u/HX6fo6pOxApu3k8PyTx/Py+P262vdisu9stvDB3vir0/WhzvSBv/Gz1/bO5Pnd7fuKw/IsoOuby/T7gw8/AAADiElEQVR4nO2aa4+rIBCGddCiaAUvVdv//0MP6J6ubb0MA3a/8CRNNtG4L3NjGI2iQCAQCAQCgUAgEAgEAudS1M3IeVfe+utfSUgqGcMMg5hnl7fr1+QLItpYxAuA8f7les8HymOtpGcxi9/Jx/R5vVb3jiKiEBYymk8Nxh4yMxfTrDVeKigqHkyiQ6xdFaFlQJb2DwX6MjwoIlIdauo9wDZo8nURRocQMP3BkM96pQdj0fT4Ru1zsSniVw0pNKPWLAEUQkZyrCFm9XQralFL1LwEdRwbIxyKuE9Je31Utip+XA2Hpizuh95Qhc6TRhJy9RlwUO/fWB6aQlUNlzEDaR2gl9+wZ7s5hoqKOZHtA3ShQlfFnYKDSZD5KZm1iIVHjFOg2TQmIjZnEf3WE/Z4rYZMbZlT4UQASUTE39aYj6tuuUqUBkJMTNzetwaAckVHglEBnFS+NdmnvyEeP5ZUYEyhiBo0a4uEnN9eqzBKBaerWE9BAMHrhWdQHnGwxWbc6W5BPfrkxyaYHHFQEdXbXYNuG3LZPZo6SzhChYNHoqjbL0imixOYygmkjvM/qULWxSMVpYsKXAIcw1qqgIybzSeJfViDHfQGO2a4g2yyJOk8qBCU3XQi1QnCRMwxKXAEkE4iE9i2AYGkH1AP0tQGh3JRbRy37HFJVE9ZqhHkFIk8uiR3magMvlwiHUTg+9oDgFw5Jy5+jEHse5/0fmS4idAdsIfS5bihGip3GYx4BlhSO2+q2HnQLgN3Cw5mPbJYp1fCxR4+TDGRPcj7OzQ+BPS60UmKvqSqYNaTrDWae64hu4Tecb5woRphBj+33WdrqoszhacEQc4nNvBSKyYyevnM6V3vB+vjfgQedpAFI1GG/Xhzl5bkFIdTyDoV2BcM4Ss/fhkUs9QBo3cRkXn3ltvoYE6Dkx0SM1JHKsG80KALKTKcCIeTKYIeJyI+881yMqJSFtSJlrhUuKg4VUSlcLWLdX5L5oKhBWQZZ7dzFKRFxVdeoq97IyaPsHa4ZrdSCfRulnc+k0MXbKmkhHsuLCo3824I+0MIixsv/fYLOi9t2gpg5Un5WSvsBsagPbFGDKM8dgwDXp1WImaSmpuvfTYdASAbD6OBYy59q4TOFXj7/0zksqy+8d3RU8lQlR03L6eYSV2pzDdZH59CfUfKNSmKYtC/5PonAgKBQCAQCAQCgUAgEAh8l3+28SUxoTz28AAAAABJRU5ErkJggg==" alt="twitter"/>
+            <img src="data:image/webp;base64,UklGRqQCAABXRUJQVlA4WAoAAAAQAAAAtAAAtAAAQUxQSBICAAARDzD/ERGCbmtblWxrIwxMQiAUQgPpJkYohIBZ0kVMozZ7173v/6yI/k+A/BvIPdiWodqOgWCZWLNlmaplm7Bgj7fhyLfpKLfHUW/b0W4Hflq4QZX7gqB1SIYBURsQDHJI2qSJ9SFri2JalFsyDar2EE2dpm2CSSxiP2inOTZBq47nQrHlRdSyqdepdcdoQxsk02yd9AmG6BDyL5kEW5NTvhgWsdXLckiRXR0nvOTWtIf6SQeS6dEmkL94gGarygZQHq29Ou/kG0r2LaX4HqX6ttJ8B34APiiyIHg6JOkQPQOCyCF5JlVEFtmXRWRSPIskIoPqeYgi0r8IIiI0n7yPazdl4zlVeXxFWQQHn2VlEm39Mn6bpHTSbzGIinyXPeEXnT/UNBSP/BWFX5Vt44+CK/6qZOvfJaX/NlkZxG+mRwzBcYqyfPWrpjyIY6Ns10N4neaLLz5IItKpnkUWkUHxTKqILLJn0ERk+zoEkUPyCCTpEF2HKg8E10YV16M031KqbyrZN5TkEyV+sF/ywQKqspWlDSB9IQfCJ4siNjQ58tF9l9ckeM7vll+D6OGjTtLSN53sGN/Fl1Ac81Yd63Ka4yFoODaiboLtGKKNpj0kU6dqi2wat0kxLYo2aKZN1joEyyFpAtkwIF4OxBsQLhunXB9Huy1HvU1HvnVHuokjGLZNjNNULN0ULXIsYl6GYvt/IVZQOCBsAAAA8AoAnQEqtQC1AD6RSKJNJaQjIiBIALASCWlu4XaxG0AT2vRVwgyCGqpNdtouEGQQ1VJrttFwgyCGqpNdtouEGQQ1VJrttFwgyCGqpNdtouEGQQ1VJrttFwgyCGqpNdAAAP7/vBGfwAAAAAAA" alt="insta"/>
+            <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAJ4AngMBEQACEQEDEQH/xAAcAAEAAQUBAQAAAAAAAAAAAAAABwECAwQGBQj/xABDEAACAQMBAggLBAcJAAAAAAAAAQIDBBEFBgcSITFBQ3GR0RMyUVJhcoGDobHBIlOzwhc2QnN0otIkJjM0VIKSlLL/xAAaAQEAAgMBAAAAAAAAAAAAAAAABAUBAwYC/8QAOxEBAAEDAQMGDAUDBQAAAAAAAAECAxEEBSExEkFRcZGhBhQiMjNSYYGxweHwExYkNGIjU9FCcoKSsv/aAAwDAQACEQMRAD8AnEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPJ1vaHTdEgnqFyoTksxpxXCnLqS+Zrru0UeclabRX9VOLVPv5u1zVbeZp8ZNUrG7n6W4r6kedZTzQtKfB+9MeVXHe1p70I9FpMn61dL6Mx45/Fujwennud31a8t6N1+zo9Fdd03+Q8+OT6ve2R4O0c92f+v1Y/0n33NpVsvfyf5R45V0PX5es/3J7Pqo952o82nWq/3yZjxyroZ/L9n157lv6TdU/0Fn2z7x45V0M/l+x689x+k3U+ews+2XePHKug/L9j157ly3naguXTbV+8kh45V0Mfl+z689kLlvQvefSbf/sS/pM+OT0d7H5etf3J7PqyR3o3Gft6NSx5VdP+gz45Pq97xPg7RzXZ7Pq2Ibz6XSaXVXq1U/ojPjn8WufB6rmudzctt5WlVGlcW93QXncFTx2PJ7p1dHPDRc2BqI82Ynu+Lq9O1C11K3VxZXEK1J/tR+vkJFNcVxmlUXbNyzVyLkYluHpqAAAAB5O0+sQ0TRbi8aTmlwacXzzfEjXdr5FOUrRaadTfi3Hv6kHXNxWu7ipc3NR1K9WXCnOXK2VMzNU5l3tuii3TFFEYiGMw95AZAZAZAZAZAZAZAZAZAZAZeps3rdfQdThdUZPwTaVenzTh3rjwbLVybdWYQ9dpKdXamiePN7JTnQqQrU41aclKE4qUWudMt87nBTExOJZAwAAAEb73LtpafZJ8TlKq11LC+bIWsndEOj8Hre+5c6o++xHOSFh0yuWMBljAZYwGWMBkYDLGAyxgMsYDLGAyxgMsYDLGAyMCad3127vZWzbeXSTpeyLwvgWennNuHD7Vt/h6yv27+10hvVwAAARHvXrcLaKhS+7tU+2Uu4r9XPlw6zYFONPVV0z8Ij/Li8kZeGQGQGQGQPXjs5qlXRKOsW1Dw9pU4eVS45w4MpReY8/i83wNkWapp5SFVtCxRfmxXOJjHVvjLx8mtMzzq5MMmTIZAZAZAZAZAljdLW4ez9xS+6upLtUX9SfpPMcjt2nGqirppj5u4JSlAAACGN6Es7XVF5ttTXxkyu1XpPc7DYcfo/8AlPycpkjrgyAyAyAyBNW7RZ2LsPWrfjTLPT+jhxW2f3tfu/8AMLdpdidN1hzr04K2u30tPiUutcntM3LNFfFq0u0dRpd1E7uiUX61s1qej1ZRr0XUguScFni8pDuaeunfG90ul2xYv7qvJq9vDtePkjrTJkMmQGQGQGQJQ3PTzp2ox8lyn/JHuJ2k82etyvhBH9aj/b85SES1CAAAEKbz3/fCt+4p/mK7U+kdhsT9nHXPycrwjQtzhAOEA4QDIE27s/1J0/1q340yy0/o4++dxe2P3tfu+EOoNysYLq2oXVJ0q9OM4vyrk7gI92u2Ms6FKpexqQpUl41XKi49fNL5mi7aoq3zuWWh1+qtVRRb8qOj74I2rKEKko06iqRTwppNZ7SvmIidzsbdVVVETXGJ6OKzhGGw4QDhAOEBJ+5z/I6n+/j/AOETdJ5s9bl/CD0tvq+aRiWoAAAAhPejxbYVv4en85FfqfSOv2JP6T3z8nJ5I63yZBkyDJkGTPGGMpv3Y/qRp/rVvxpllp/Rw43bH72v3fCHS1a1OjTlUqzjCnHjlKUkkl6Wbp3cVbTE1TiHB7R7y7K14VDRaavKyX+NJ4pR6ueXy9JGuamI3UrvSbEuV4qv+THRz/T73I11fV7/AFm5VxqVzOtNeLHkjD1VyIhVV1VTmqXR2NPa09PJtRj4tHJ5b8mQZMgyZBkyDKUtzS/sGp/xCX8qJ2l82XL7f9NR1fOUjEpQgAABC+9iDhtYpY4p2sMf8pkHUx5fudZsKc6WfZVPwhxpHXIAAAAJB2f27tNn9j7Kyo0ZXN/F1c039mEM1JtNvHkaeF8CTRfii3Ec6h1Oy7mq1lVczind18Icnru0eqa9Vb1G6lKlnMaEPs04+zn63k013Kq+MrTTaOzpo/pxv6ed5WTwlAAAAAABgSxubg1o19Nrxrr8kSbpY8metyu3Z/UUx/H5ykIkqQAAAIi3x0XHWLCvjilRlHPU0/qyHqo3xLpdgVeRcp9sOAyRV+ZAZAZAZAZAZAZAZAZAZAZAZAZMiZ901F0tllOSx4StOXXx4+hO08YtuP2zVytZPsw7U3qsAAAOB3t6ZK70SF3Ti3O1qcNpebyPv9ho1FHKoz0LXY2oi1qOTVwq3ffwQ8QXXgAAAAAAAAAAAAAK04zqVI06UXKc5KMUudvkERmcQxVVFMTVVwh9EbK6etL0Gzs1y06SUn5Xzss6KeTTEOC1F78a9Vc6Zl6x6aQAAAw3dvTuredGrFShNYaYImY3wh3afd/eWVedTTF4Sg3lU28Y9CZEr0+/NLo9JtqnEU6jj0/5cpV0jUqLxVsqyfoWfkaJt1xxha0a/S1cLkffW15WtzB4lbV17qXcY5M9DdGoszwrjthY6VVctGqvdvuMcmXqLlueFUdsKNSisyjJL0oYl6iYnhKxziuWS7RO7i9Yk8JDzo9pjMM8mTwkPPj2jLGJOHHzl2gxK9Rk+SMn1JmcS8zVTHGVyo1nyUar6qbGJ6Hn8WiP9UdsMkLK7n4trXfumZ5FXQ8TqbMca47YbNDRNUuJqNKxqtt4+0uCvieotVzzNFe0dLRG+uPdvSHsNsHK2uKd/qiUqkOOEOaPeyVas8nfPFQ7Q2rN+Jt24xT3ykxLCSRvU6oAAAAAUcVJYayvSBr1LG2qePRg/YBiekWL5aEQMb0OwfQIC16Dp76FAUez2nPoQYWvZvTfuUDMi2c01dD2AXLZ7Tl0KAqtB09dCgL46JYLoIgZFpVkuShDsBhlp2dvTeYUoJ9QGdLAFQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//2Q==" alt="toutube"/>
+            <img src="data:image/png;base64,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" alt="search" />
+        </div>
+</div>
+<hr>
+<div id="select" >
+    <select id="beauty">
+        <option>BEAUTY</option>
+        <option value="Hair care" >Hair care</option>
+        <option value="Makeup" >Makeup</option>
+        <option value="Skin care" > Skin care</option>
+    </select>
+
+    <select id="men">
+        <option>MEN</option>
+        <option value="Grooming" >Grooming</option>
+        <option value="Skin care" >Skin care</option>
+        <option value="Hair care" >Hair care</option>
+    </select>
+
+    <select id="interiors">
+        <option>INTERIORS</option>
+        <option id="Decor & Style" >Decor & Style</option>
+        <option id="Kitchens" >Kitchens</option>
+        <option id="Bathrooms" >Bathrooms</option>
+        <option id="Bedrooms" >Bedrooms</option>
+        <option id="Living Rooms" >Living Rooms</option>
+        <option id="Dining Rooms">Dining Rooms</option>
+        <option id="Other Areas">Other Areas</option>
+        <option id="Real Home Tours" >Real Home Tours</option>
+    </select>
+
+    <select id="lifestyle">
+        <option value="LIFESTYLE" >LIFESTYLE</option>
+        <option value="Health & Wellness" >Health & Wellness</option>
+        <option value="Party" >Party</option>
+    </select>
+
+    <a href="https://www.urbancompany.com/blog/humans-of-urban-company/" >HUMANS OF URBANCOMPANY</a>
+    <a href="https://www.urbancompany.com/blog/inside-urban-company/" >INSIDE URBAN COMPANY</a>
+    <a href="https://www.urbancompany.com/blog/tugvideos/" >TUG VIDEOS</a>
+    <a href="https://www.urbancompany.com/" >URBAN COMPANY.COM</a>
+
+</div>
+<hr>
+
+<div id="cruserbox" >
+    <h1>Latest Posts</h1>
+    <hr>
+    <div id="cruser" >
+      <div>
+        <img src="https://de927adv5b23k.cloudfront.net/wp-content/uploads/2022/01/20102419/pexels-lukas-590022-1.jpg" alt="companyupdates" />
+     <p>COMPANY UPDATES</p>
+     <a href="https://www.urbancompany.com/blog/company-updates/earnings-index-benchmarking-report-uc-service-professionals-vs-off-the-platform-professionals/" >Earnings Index Benchmarking Report | UC Service Professionals vs Off the Platform Professionals</a>
+
+    </div>
+      <div>
+        <img src="https://de927adv5b23k.cloudfront.net/wp-content/uploads/2021/12/03163659/456.jpg" alt="women" />
+        <p>THUG VIDEOS</p>
+        <a href="https://www.urbancompany.com/blog/tugvideos/5-trending-hairstyles-for-long-hair-to-try-this-shaadi-season/" >5 Trending Hairstyles for Long Hair to Try This Shaadi Season</a>    
+    </div>
+      <div>
+        <img src="https://de927adv5b23k.cloudfront.net/wp-content/uploads/2021/08/03162342/featured-best-hair-removal-method.jpg" alt="purifier"/>
+        <p>THUG VIDEOS</p>  
+        <a href="https://www.urbancompany.com/blog/tugvideos/which-is-the-best-hair-removal-method/">Which is the Best Hair Removal Method</a>  
+    </div>
+      <div>
+        <img src="https://de927adv5b23k.cloudfront.net/wp-content/uploads/2021/06/22114135/Preeti-Blog-feature.jpg" />
+        <p>HUMANS OF URBAN COMPANY</p>  
+        <a href="https://www.urbancompany.com/blog/humans-of-urban-company/no-dream-is-too-big-for-preeti-dua-salon-professional/" >No Dream is Too Big for Preeti Dua | Salon Professional</a>
+    </div>
+    
+    </div>
+</div> 
+
+</body>
+</html>
+<script>
+    document.querySelector("#beauty").addEventListener("change",handlebeauty)
+
+    function handlebeauty(){
+       selected=document.querySelector("#beauty").value
+       console.log(selected)
+       if(selected=="Hair care"){
+        window.location.href="https://www.urbancompany.com/blog/beauty/hair-care/"
+       } else if(selected=="Makeup"){
+        window.location.href="https://www.urbancompany.com/blog/beauty/make-up/"
+       } else if(selected=="Skin care"){
+        window.location.href="https://www.urbancompany.com/blog/beauty/skincare/"
+       }
+    }
+
+    document.querySelector("#men").addEventListener("change",handlemen)
+
+    function handlemen(){
+        selected=document.querySelector("#men").value;
+        if(selected=="Grooming"){
+            window.location.href="https://www.urbancompany.com/blog/men/men-grooming/"
+        } else if(selected=="Skin care"){
+            window.location.href="https://www.urbancompany.com/blog/men/men-skincare/"
+        } else if(selected=="Hair care"){
+            window.location.href="https://www.urbancompany.com/blog/men/men-haircare/"
+        }
+    }
+
+    document.querySelector("#interiors").addEventListener("change",handleinteriors)
+
+    function handleinteriors(){
+       selected=document.querySelector("#interiors").value
+       if(selected=="Decor & Style"){
+        window.location.href="https://www.urbancompany.com/blog/interiors/decor-style/"
+
+       } else if(selected=="Kitchens"){
+        window.location.href="https://www.urbancompany.com/blog/interiors/kitchens/"
+
+       } else if(selected=="Bathrooms"){
+        window.location.href="https://www.urbancompany.com/blog/interiors/bathrooms/"
+       
+      } else if(selected=="Bedrooms"){
+        window.location.href="https://www.urbancompany.com/blog/interiors/bedrooms/"
+
+      } else if(selected=="Living Rooms"){
+        window.location.href="https://www.urbancompany.com/blog/interiors/living-rooms/"
+      } else if(selected=="Dining Rooms"){
+        window.location.href="https://www.urbancompany.com/blog/interiors/dining-rooms/"
+      } else if(selected=="Other Areas"){
+        window.location.href="https://www.urbancompany.com/blog/interiors/other-areas/"
+      } else if(selected=="Real Home Tours"){
+        window.location.href="https://www.urbancompany.com/blog/interiors/real-home-tours/"
+      }
+    }
+   
+    document.querySelector("#lifestyle").addEventListener("change",handlelifestyle)
+
+    function handlelifestyle(){
+    
+      selected=document.querySelector("#lifestyle").value
+      
+      if(selected=="Health & Wellness"){
+        window.location.href="https://www.urbancompany.com/blog/lifestyle/health/"
+      } else if(selected=="Party"){
+        window.location.href="https://www.urbancompany.com/blog/lifestyle/party/"
+      } 
+    }
+  
+  
+</script>
