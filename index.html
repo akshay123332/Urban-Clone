@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        #tophead{
+            width:100vw;
+            display: flex;
+            justify-content: space-between;
+            
+            
+            
+        }
+        #tophead>img{
+            margin: auto;
+            padding-left: 80px;
+        }
+        #tophead>div{
+            width:10%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            padding-right: 50px;
+           
+            
+        }
+       #tophead>div img{
+        width:20px;
+        display: flex;
+        justify-content: space-around;
+       }
+       #select{
+        width:80%;
+        margin: auto;
+        
+        padding: 5px 5px;
+        display: flex;
+        justify-content: space-between;
+       }
+       #select a{
+        font-weight: bold;
+        color: black;
+        font-size: 15px;
+        
+        
+       }
+       a:link{
+        text-decoration: none;
+       }
+
+       #beauty,#men,#interiors,#lifestyle{
+        border: 0px;
+       }
+       select:hover{
+        color:crimson;
+       }
+
+       #cruserbox{
+        width:80vw;
+        
+        margin: auto;
+       
+       }
+
+       #cruser{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(1,auto);
+        gap: 10px;
+       }
+      
+       #cruser>div{
+        border:22%;
+       
+       }
+
+       #cruser>div img{
+        width:100%;
+       }
+
+       #cruser p{
+        font-weight: bold;
+        color: blueviolet;
+       }
+
+       #cruser a{
+        width: 100%;
+        font-size: 30px;
+        color:black;
+        margin-bottom: 10px;
+        
+        
+        
+       }
+       #cruser a:hover{
+        text-decoration: underline;
+       }
+
+       #topmiddle,#midbottom{
+        width:82vw;
+       
+        margin: auto;
+        display: flex;
+        
+        
+        
+       }
+       #sticky{
+        width:20vw;
+        margin-top: 20px;
+       
+       
+
+       }
+
+      #sticky img{
+        width:100%;
+      }
+
+      .imagesticky{
+        width:20vw;
+       
+        display: flex;
+
+      }
+      .imagesticky>img{
+         width:5px;
+         height:60px;
+      }
+      #wedintbox>div,#lifemenbox>div{
+      width:30vw;
+      height:auto;
+    
+      margin-right: 10px;
+     
+      
+
+      }
+      #wedintbox>div img, #lifemenbox>div img{
+        width:100%;
+      }
+
+      #wedintbox,#lifemenbox{
+        display: flex;
+        height: auto;
+      }
+      
+      #beautyhead{
+        width:61vw;
+        
+        margin-left:8%;
+      }
+
+      #beautyflex{
+        width:61w;
+        
+        display:flex;
+      }
+      #beautyleft{
+        width:30vw;
+       
+      }
+
+      #beautyleft img{
+        width:100%;
+      }
+
+      #rightbeauty{
+        width:30vw;
+        
+        margin-left: 10px;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(4,150px);
+       
+       
+      }
+
+      #rightbeauty>div{
+       
+        display: flex;
+        margin-bottom: 20px;
+        
+        
+        
+      }
+      #rightbeauty>div img{
+        width:150px;
+        height: 100%;
+        margin-right: 20px;
+      }
+      #rightbeauty>div>div a{
+        color:black
+      }
+      #rightbeauty>div>div a:hover{
+        text-decoration: underline;
+      }
+
+      #rightbeauty>div>div p{
+        color:brown;
+        font-weight: bold;
+      }
+
+      #beautyleft a{
+        font-size: 35px;
+        color: black;
+        font-weight: bold;
+      }
+
+      #beautyleft a:hover{
+        text-decoration: underline;
+      }
+      #beautyleft h3{
+        font-weight: lighter;
+
+      }
+
+      #wedintbox a,#lifemenbox a{
+        color: black;
+        font-size: 35px;
+      }
+      #wedintbox a:hover,#lifemenbox a:hover{
+        text-decoration: underline;
+      }
+
+      #wedintbox p,#lifemenbox p{
+        font-size: 20px;
+       
+      }
+
+      #wedintbox h2, #lifemenbox h2{
+        font-weight: bold;
+        font-size: 35px;
+      }
+
+
+     #midgrid,#bottom{
+       width:61vw;  
+        height:auto;
+      
+        display: flex;
+        justify-content: space-between;
+        margin-left:8%;
+     }
+
+    #leftmid,#leftbottom{
+      width:30vw;
+      display: grid;
+      grid-template-columns: repeat(1,1fr);
+      grid-template-rows: repeat(4,150px);
+      gap: 10px;
+      
+    }
+
+    #rightmid,#rightbottom{
+      width:30vw;
+      display: grid;
+      grid-template-columns: repeat(1,1fr);
+      grid-template-rows: repeat(4,150px);
+      gap: 10px;
+    }
+
+
+    #leftmid>div,#rightmid>div,#leftbottom>div,#rightbottom>div{
+      display: flex;
+    }
+
+
+    #leftmid>div img, #rightmid>div img,#leftbottom> div img,#rightbottom> div img{
+      width:135px;
+      height:100px;
+      margin-right: 10px;
+    }
+
+    #leftmid>div a,#rightmid>div a,#leftbottom> div a,#rightbottom> div a{
+      color: black;
+      font-size: 20px;
+    }
+    
+    #leftmid>div a:hover,#rightmid>div a:hover,#leftbottom>div a:hover,#rightbottom>div a:hover{
+      text-decoration: underline;
+    }
+
+    #lifemenbox>div:nth-child(2) img{
+     margin-bottom: 80px;
+    }
+
+    #bottom{
+      margin-top: 20px;
+    }
+   
+    
+    </style>
+</head>
+<body>
+    <div id="tophead" >
+        <img src="https://de927adv5b23k.cloudfront.net/wp-content/uploads/2019/05/24170311/TheUrbanGuideLogo_UrbanCompany_Transparent_Big-Copy-Copy.png"/>
+        <div  >
+            <img src="data:image/webp;base64,UklGRrACAABXRUJQVlA4WAoAAAAQAAAAhAAAhAAAQUxQSDEAAAARDzD/ERFCUSRJDZnnScC/q5NB5jmngIro/wToo66juFG9SAwebj8DF4nBRrWjqMgBAFZQOCBYAgAAcBEAnQEqhQCFAD6RRptJpaQioSsWSFCwEgljbt1e8Z0EVfpNPVxefZ7ay7oqdndSwxtPlYspRTcUAgANio9S1X8EUL2lCRsvCk64oAMXwpOZUc6ah1jLxpftQHXT0ji9/Y0lntMyRG/bA9Y7XgeKKI0cDr+qaEGv9RyUu9FS1ntPlWearS7K2djhCB3U2T0BOZPkgAD+7L/yA/81ZkOJ1O3scsRDFFKD7ovjMgKPdbUFhne/dCmCLmg18y8BUIYvXA2IDa7AgdQ9SM8suL3I87jstSq/e9bfmsLLKPa4nA+uDuFCcm+EmBCkzAPhACRqg6L7K0ldMhAzAeM1KFyAFyrjxqO19eC19xY5MAhCBRuCpJXGzJYALZ/mEsqxHOp4NSwjnNdDZf+jf+OUfPv9Tzb+E9QjvEX7Whg+qLjvusqSj7Wygx5u/p4q3lbEzmQ1a4Hif1oSjjzgV40200kcfmrYBhfKuEoQ7tNiBKLXzHbZLSHaB6adeaQe/Phs1S7FZ/dt5QFc70kwxQ2a/fU3Lfn40c3rrGqWH8YRGtt/YpALE46PRZTVJ41HCT6EUwsttaPcrNFo24dw0VKj3bllymWA5wjigFowvmLA/Ci1SIY8c19QT6mndvaoo4cMvXadEyORhdVPWyhM/RS/pgYCXX8tYWPpCWW4WBmwJunwfgMBDt9OXx+IpXehfRi06xOAT4gGwC4J0xgYgOoiXFgQ+jmu7Gf0qWJbfUdZVMJ3qQl5JasOb9+90j1jP3aXO+f3NbExvvcmqwFjg3SJoIxX3Nsa6IxkWAAA" alt="fb"/>
+            <img src="data:image/png;base64,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" alt=""/>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIUAAACFCAMAAABCBMsOAAAAUVBMVEX///9Vre5Mqu1HqO3u9v32+v75/P53u/HX6fo6pOxApu3k8PyTx/Py+P262vdisu9stvDB3vir0/WhzvSBv/Gz1/bO5Pnd7fuKw/IsoOuby/T7gw8/AAADiElEQVR4nO2aa4+rIBCGddCiaAUvVdv//0MP6J6ubb0MA3a/8CRNNtG4L3NjGI2iQCAQCAQCgUAgEAgEAudS1M3IeVfe+utfSUgqGcMMg5hnl7fr1+QLItpYxAuA8f7les8HymOtpGcxi9/Jx/R5vVb3jiKiEBYymk8Nxh4yMxfTrDVeKigqHkyiQ6xdFaFlQJb2DwX6MjwoIlIdauo9wDZo8nURRocQMP3BkM96pQdj0fT4Ru1zsSniVw0pNKPWLAEUQkZyrCFm9XQralFL1LwEdRwbIxyKuE9Je31Utip+XA2Hpizuh95Qhc6TRhJy9RlwUO/fWB6aQlUNlzEDaR2gl9+wZ7s5hoqKOZHtA3ShQlfFnYKDSZD5KZm1iIVHjFOg2TQmIjZnEf3WE/Z4rYZMbZlT4UQASUTE39aYj6tuuUqUBkJMTNzetwaAckVHglEBnFS+NdmnvyEeP5ZUYEyhiBo0a4uEnN9eqzBKBaerWE9BAMHrhWdQHnGwxWbc6W5BPfrkxyaYHHFQEdXbXYNuG3LZPZo6SzhChYNHoqjbL0imixOYygmkjvM/qULWxSMVpYsKXAIcw1qqgIybzSeJfViDHfQGO2a4g2yyJOk8qBCU3XQi1QnCRMwxKXAEkE4iE9i2AYGkH1AP0tQGh3JRbRy37HFJVE9ZqhHkFIk8uiR3magMvlwiHUTg+9oDgFw5Jy5+jEHse5/0fmS4idAdsIfS5bihGip3GYx4BlhSO2+q2HnQLgN3Cw5mPbJYp1fCxR4+TDGRPcj7OzQ+BPS60UmKvqSqYNaTrDWae64hu4Tecb5woRphBj+33WdrqoszhacEQc4nNvBSKyYyevnM6V3vB+vjfgQedpAFI1GG/Xhzl5bkFIdTyDoV2BcM4Ss/fhkUs9QBo3cRkXn3ltvoYE6Dkx0SM1JHKsG80KALKTKcCIeTKYIeJyI+881yMqJSFtSJlrhUuKg4VUSlcLWLdX5L5oKhBWQZZ7dzFKRFxVdeoq97IyaPsHa4ZrdSCfRulnc+k0MXbKmkhHsuLCo3824I+0MIixsv/fYLOi9t2gpg5Un5WSvsBsagPbFGDKM8dgwDXp1WImaSmpuvfTYdASAbD6OBYy59q4TOFXj7/0zksqy+8d3RU8lQlR03L6eYSV2pzDdZH59CfUfKNSmKYtC/5PonAgKBQCAQCAQCgUAgEAh8l3+28SUxoTz28AAAAABJRU5ErkJggg==" alt="twitter"/>
+            <img src="data:image/webp;base64,UklGRqQCAABXRUJQVlA4WAoAAAAQAAAAtAAAtAAAQUxQSBICAAARDzD/ERGCbmtblWxrIwxMQiAUQgPpJkYohIBZ0kVMozZ7173v/6yI/k+A/BvIPdiWodqOgWCZWLNlmaplm7Bgj7fhyLfpKLfHUW/b0W4Hflq4QZX7gqB1SIYBURsQDHJI2qSJ9SFri2JalFsyDar2EE2dpm2CSSxiP2inOTZBq47nQrHlRdSyqdepdcdoQxsk02yd9AmG6BDyL5kEW5NTvhgWsdXLckiRXR0nvOTWtIf6SQeS6dEmkL94gGarygZQHq29Ou/kG0r2LaX4HqX6ttJ8B34APiiyIHg6JOkQPQOCyCF5JlVEFtmXRWRSPIskIoPqeYgi0r8IIiI0n7yPazdl4zlVeXxFWQQHn2VlEm39Mn6bpHTSbzGIinyXPeEXnT/UNBSP/BWFX5Vt44+CK/6qZOvfJaX/NlkZxG+mRwzBcYqyfPWrpjyIY6Ns10N4neaLLz5IItKpnkUWkUHxTKqILLJn0ERk+zoEkUPyCCTpEF2HKg8E10YV16M031KqbyrZN5TkEyV+sF/ywQKqspWlDSB9IQfCJ4siNjQ58tF9l9ckeM7vll+D6OGjTtLSN53sGN/Fl1Ac81Yd63Ka4yFoODaiboLtGKKNpj0kU6dqi2wat0kxLYo2aKZN1joEyyFpAtkwIF4OxBsQLhunXB9Huy1HvU1HvnVHuokjGLZNjNNULN0ULXIsYl6GYvt/IVZQOCBsAAAA8AoAnQEqtQC1AD6RSKJNJaQjIiBIALASCWlu4XaxG0AT2vRVwgyCGqpNdtouEGQQ1VJrttFwgyCGqpNdtouEGQQ1VJrttFwgyCGqpNdtouEGQQ1VJrttFwgyCGqpNdAAAP7/vBGfwAAAAAAA" alt="insta"/>
+            <img src="data:image/jpeg;base64,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" alt="toutube"/>
+            <img src="data:image/png;base64,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" alt="search" />
+        </div>
+</div>
+<hr>
+<div id="select" >
+    <select id="beauty">
+        <option>BEAUTY</option>
+        <option value="Hair care" >Hair care</option>
+        <option value="Makeup" >Makeup</option>
+        <option value="Skin care" > Skin care</option>
+    </select>
+
+    <select id="men">
+        <option>MEN</option>
+        <option value="Grooming" >Grooming</option>
+        <option value="Skin care" >Skin care</option>
+        <option value="Hair care" >Hair care</option>
+    </select>
+
+    <select id="interiors">
+        <option>INTERIORS</option>
+        <option id="Decor & Style" >Decor & Style</option>
+        <option id="Kitchens" >Kitchens</option>
+        <option id="Bathrooms" >Bathrooms</option>
+        <option id="Bedrooms" >Bedrooms</option>
+        <option id="Living Rooms" >Living Rooms</option>
+        <option id="Dining Rooms">Dining Rooms</option>
+        <option id="Other Areas">Other Areas</option>
+        <option id="Real Home Tours" >Real Home Tours</option>
+    </select>
+
+    <select id="lifestyle">
+        <option value="LIFESTYLE" >LIFESTYLE</option>
+        <option value="Health & Wellness" >Health & Wellness</option>
+        <option value="Party" >Party</option>
+    </select>
+
+    <a href="https://www.urbancompany.com/blog/humans-of-urban-company/" >HUMANS OF URBANCOMPANY</a>
+    <a href="https://www.urbancompany.com/blog/inside-urban-company/" >INSIDE URBAN COMPANY</a>
+    <a href="https://www.urbancompany.com/blog/tugvideos/" >TUG VIDEOS</a>
+    <a href="https://www.urbancompany.com/" >URBAN COMPANY.COM</a>
+
+</div>
+<hr>
+
+<div id="cruserbox" >
+    <h1>Latest Posts</h1>
+    <hr>
+    <div id="cruser" >
+      <div>
+        <img src="https://de927adv5b23k.cloudfront.net/wp-content/uploads/2022/01/20102419/pexels-lukas-590022-1.jpg" alt="companyupdates" />
+     <p>COMPANY UPDATES</p>
+     <a href="https://www.urbancompany.com/blog/company-updates/earnings-index-benchmarking-report-uc-service-professionals-vs-off-the-platform-professionals/" >Earnings Index Benchmarking Report | UC Service Professionals vs Off the Platform Professionals</a>
+
+    </div>
+      <div>
+        <img src="https://de927adv5b23k.cloudfront.net/wp-content/uploads/2021/12/03163659/456.jpg" alt="women" />
+        <p>THUG VIDEOS</p>
+        <a href="https://www.urbancompany.com/blog/tugvideos/5-trending-hairstyles-for-long-hair-to-try-this-shaadi-season/" >5 Trending Hairstyles for Long Hair to Try This Shaadi Season</a>    
+    </div>
+      <div>
+        <img src="https://de927adv5b23k.cloudfront.net/wp-content/uploads/2021/08/03162342/featured-best-hair-removal-method.jpg" alt="purifier"/>
+        <p>THUG VIDEOS</p>  
+        <a href="https://www.urbancompany.com/blog/tugvideos/which-is-the-best-hair-removal-method/">Which is the Best Hair Removal Method</a>  
+    </div>
+      <div>
+        <img src="https://de927adv5b23k.cloudfront.net/wp-content/uploads/2021/06/22114135/Preeti-Blog-feature.jpg" />
+        <p>HUMANS OF URBAN COMPANY</p>  
+        <a href="https://www.urbancompany.com/blog/humans-of-urban-company/no-dream-is-too-big-for-preeti-dua-salon-professional/" >No Dream is Too Big for Preeti Dua | Salon Professional</a>
+    </div>
+    
+    </div>
+</div>
+
+
+<div id="beautyhead" >
+<h1>Beauty</h1>
+<hr>
+<div id="beautyflex" >
+<div id="beautyleft" >
+ <img src="https://de927adv5b23k.cloudfront.net/wp-content/uploads/2020/09/11170202/Best-Sheet-Masks-in-India-512x288.jpg" alt="beautypic" />
+ <h3>SEPTEMBER 11, 2020</h3>
+ <a href="https://www.urbancompany.com/blog/beauty/best-sheet-masks-in-india/" >Best Sheet Masks in India</a>
+ <p>Sheet masks are like those quick facials you can have with no added effort. Most of these face masks usually live up to their claims. Here we have a look at the…</p>
+</div>
+
+<div id="rightbeauty">
+  <div>
+    <img src="https://de927adv5b23k.cloudfront.net/wp-content/uploads/2020/09/02182811/65292faf9652d19903511ac3a4a31340-150x150.jpg" alt="1stpic" />
+    <div>
+      <p>BEAUTY,SKINCARE</p>
+      <a href="https://www.urbancompany.com/blog/beauty/the-wonders-of-coconut-oil-for-face/" >The Wonders of Coconut Oil for Face</a>
+    </div>
+  </div>
+  <div>
+    <img src="https://de927adv5b23k.cloudfront.net/wp-content/uploads/2020/08/28185438/rollon12-512x341-150x150.jpg" alt="2stpic" />
+    <div>
+      <p>BEAUTY,SKINCARE</p>
+      <a href="https://www.urbancompany.com/blog/beauty/rica-roll-on-waxing-the-process/" >RICA Roll-on Waxing: The Process</a>
+  </div>
+  </div>
+  <div>
+    <img src="https://de927adv5b23k.cloudfront.net/wp-content/uploads/2020/08/28123311/new-150x150.jpg" alt="3stpic" />
+    <div>
+      <p>BEAUTY,SKINCARE</p>
+      <a href="https://www.urbancompany.com/blog/beauty/all-you-need-to-know-about-the-sara-fruit-cleanup/" >All You Need to Know About the Sara Fruit Cleanup</a>
+  </div>
+  </div>
+  <div>
+    <img src="https://de927adv5b23k.cloudfront.net/wp-content/uploads/2020/08/24091358/kama-150x150.png" alt="4thpic" />
+    <div>
+      <p>BEAUTY,SKINCARE</p>
+      <a href="https://www.urbancompany.com/blog/beauty/best-night-creams-in-india-for-indian-skin-types/" >Best Night Creams in India for Indian Skin Types</a>
+  </div>
+  </div>
+</div>
+</div>
+</div>
+</div> 
+
+ <div id="topmiddle">
+  <div id="wedintbox"  >
+    <div>
+      <h2>Weddings</h2>
+      <hr>
+      <img src="https://de927adv5b23k.cloudfront.net/wp-content/uploads/2019/08/04145906/Fotowalle2-1.jpg-min-1.jpg" alt="pic" />
+      <a href="https://www.urbancompany.com/blog/weddings/wedding-fashion/20-bridal-wedding-saree-ideas-to-inspire-you/" >20 Wedding Saree Ideas To Inspire You!</a>
+      <p>That, there is no match to the grace and elegance of an Indian saree, is old news. No wonder generations of women opted for the timeless nine yards on their wedding days…</p>
+    </div>
+
+    <div>
+      <h2>Interiors</h2>
+      <hr>
+      <img src="https://de927adv5b23k.cloudfront.net/wp-content/uploads/2020/09/29170111/Untitled-design-1-2.jpg" alt="pic" />
+      <a href="https://www.urbancompany.com/blog/interiors/wallpapers-and-stencils-are-a-great-way-to-go-heres-why/" >Wallpapers and Stencils Are a Great Way to Go, Here’s Why</a>
+      <p>What’s a cost-effective but great way to get statement walls? You guessed it. Both wallpapers and stencils for walls are great to break the monotony of solid coloured walls. Have doubts? Let…</p>
+    </div>
+    
+
+  </div>
+  
+   <div id="sticky">
+    <h1>Urban company App</h1>
+    <img src="https://de927adv5b23k.cloudfront.net/wp-content/uploads/2022/05/25130744/health-insurance.jpeg" alt="sticky1" />
+    <img src="https://de927adv5b23k.cloudfront.net/wp-content/uploads/2022/01/20102419/pexels-lukas-590022-1.jpg" alt="sticky2" /> 
+    <h1>Follow us</h1>
+    <div class="imagesticky" >
+      <img src="data:image/jpeg;base64,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" alt="fb" />
+      <img src="data:image/jpeg;base64,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" alt="twitter" />
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRc6tJFzIpbBPSTREGZxWZ-0_yxeA8M-Wpi7ZnHP9RPTA&s" alt="" />
+      <img src="data:image/jpeg;base64,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" alt="" />
+      <img src="data:image/png;base64,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" alt="youtube" />
+    </div>
+
+  </div>
+   
+ </div>
+
+ <div id="midgrid">
+  <div id="leftmid" >
+    <div>
+      <img src="https://de927adv5b23k.cloudfront.net/wp-content/uploads/2019/02/31161829/New-latest-green-floral-Mandap-decor-by-Bhoomi-wedding-planners-1-150x150.jpg" />
+     <div>
+      <a href="https://www.urbancompany.com/blog/weddings/mandap-decoration-foliage-trend/" > 7 Mandap Decor Designs Based On The Foliage & Greenery Trend</a>
+     </div>
+    </div>
+    <div>
+      <img src="https://de927adv5b23k.cloudfront.net/wp-content/uploads/2019/07/31160424/Minimal-bridal-makeup-150x150.jpg" />
+      <div>
+       <a href="https://www.urbancompany.com/blog/weddings/wedding-makeup/minimal-natural-bridal-makeup/" >5 Brides Who Chose To Go Super Minimal With Their Makeup & Looked Fabulous!</a>
+      </div>
+    </div>
+    <div>
+      <img src="https://de927adv5b23k.cloudfront.net/wp-content/uploads/2019/07/30164030/Sangeet-stage-decor-Altair-150x150.jpeg" />
+      <div>
+       <a href="https://www.urbancompany.com/blog/weddings/stage-decor-ideas-for-smaller-functions/" >Stage Decor Ideas for Smaller Functions (Engagement, Cocktail, Sangeet!)</a>
+      </div>
+    </div>
+    <div>
+      <img src="https://de927adv5b23k.cloudfront.net/wp-content/uploads/2019/05/30140554/Wedding-Stage-decor-outdoor-150x150.jpg" />
+      <div>
+       <a href="https://www.urbancompany.com/blog/weddings/best-stage-decoration-ideas/" >14 Best Stage Decoration Ideas For Indian Weddings!</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="rightmid" >
+   <div>
+    <img src="https://de927adv5b23k.cloudfront.net/wp-content/uploads/2020/09/17134553/Untitled-design-2-1-150x150.jpg" />
+      <div>
+       <a href="https://www.urbancompany.com/blog/interiors/all-you-need-to-know-about-enamel-painting/" >All You Need to Know About Enamel Painting</a>
+      </div>
+   </div>
+   <div>
+    <img src="https://de927adv5b23k.cloudfront.net/wp-content/uploads/2020/09/14155712/Untitled-design-1-150x150.jpg" />
+      <div>
+       <a href="https://www.urbancompany.com/blog/interiors/wood-polishing-all-you-need-to-know/" >Wood Polishing: All You Need to Know</a>
+      </div>
+   </div>
+   <div>
+    <img src="https://de927adv5b23k.cloudfront.net/wp-content/uploads/2020/09/09230216/painting-150x150.jpg" />
+      <div>
+       <a href="https://www.urbancompany.com/blog/interiors/textured-walls-everything-you-need-to-know/" >Textured Walls: Everything You Need to Know</a>
+      </div>
+   </div>
+   <div>
+    <img src="https://de927adv5b23k.cloudfront.net/wp-content/uploads/2020/09/08173613/waterproof-150x150.jpg" />
+      <div>
+       <a href="https://www.urbancompany.com/blog/interiors/waterproofing-your-walls-all-you-need-to-know/" >Waterproofing Your Walls: All You Need to Know</a>
+      </div>
+   </div>
+  </div>
+ </div>
+
+<div id="midbottom" >
+  <div id="lifemenbox">
+  <div>
+    <h2>Lifestyle</h2>
+    <hr>
+    <img src="https://de927adv5b23k.cloudfront.net/wp-content/uploads/2020/08/25222436/Lotus-pose-1.jpg" alt="pic" />
+    <p>AUGUST 25, 2020</p>
+    <a href="https://www.urbancompany.com/blog/lifestyle/health/yoga-for-pcos-6-asanas-to-treat-pcos/" >Yoga for PCOS: 6 Asanas to Treat PCOS</a>
+    <p>Polycystic ovary syndrome (PCOS) is a common hormonal problem that affects 1 out of 10 women globally. However, did you know that yoga is a great way to treat PCOS and facilitate…</p>
+  </div>
+  <div>
+    <h2>Men</h2>
+    <hr>
+    <img src="https://de927adv5b23k.cloudfront.net/wp-content/uploads/2020/09/03122055/best-dandruff-shampoo-for-men-1024x459.jpg" alt="pic" />
+    <p>AUGUST 25, 2020</p>
+    <a href="https://www.urbancompany.com/blog/men/how-to-prevent-dandruff-in-men/" >How To Prevent Dandruff In Men</a>
+    <p>Dandruff is a common problem faced by people across the globe. Men are more frequent victims of this condition. Although the flaking of skin (particularly on the scalp) is the primary symptom, …</p>
+  </div>
+  </div>
+
+</div>
+
+<div id="bottom" >
+  <div id="leftbottom" >
+    <div>
+      <img src="https://de927adv5b23k.cloudfront.net/wp-content/uploads/2020/08/19164510/sarvangasana-150x150.jpg" />
+      <div>
+       <a href="https://www.urbancompany.com/blog/lifestyle/health/yoga-for-thyroid-different-asanas/" >Yoga for Thyroid: Different Asanas </a>
+      </div>
+    </div>
+    <div>
+      <img src="https://de927adv5b23k.cloudfront.net/wp-content/uploads/2020/08/12112509/anulom_vilom-150x150.jpg" />
+      <div>
+       <a href="https://www.urbancompany.com/blog/lifestyle/health/health-benefits-of-anulom-vilom-pranayama/" >Health Benefits of Anulom Vilom Pranayama</a>
+      </div>
+    </div>
+    <div>
+      <img src="https://de927adv5b23k.cloudfront.net/wp-content/uploads/2019/11/26170723/yoga-poses-to-150x150.jpg" />
+      <div>
+       <a href="https://www.urbancompany.com/blog/lifestyle/health/yoga-to-reduce-belly-fat/" >6 Yoga Asanas To Help You Burn Your Belly Fat</a>
+      </div>
+    </div>
+    <div>
+      <img src="https://de927adv5b23k.cloudfront.net/wp-content/uploads/2019/11/26132622/intermittent-fasting-women-150x150.jpg" />
+      <div>
+       <a href="https://www.urbancompany.com/blog/lifestyle/health/intermittent-fasting-for-women/" >Is Intermittent Fasting Safe For Women?</a>
+      </div>
+    </div>
+  </div>
+  <div id="rightbottom" >
+    <div>
+      <img src="https://de927adv5b23k.cloudfront.net/wp-content/uploads/2020/08/31123544/gettyimages-181879127-1589643370-150x150.jpg" />
+      <div>
+       <a href="https://www.urbancompany.com/blog/men/mens-hair-colouring-home-or-salon/" >Men’s Hair Colouring: Home or Salon?</a>
+      </div>
+    </div>
+    <div>
+      <img src="https://de927adv5b23k.cloudfront.net/wp-content/uploads/2020/08/27114437/90426618_154256686052525_1736364692824191085_n-150x150.jpg" />
+      <div>
+       <a href="https://www.urbancompany.com/blog/men/3-classic-mens-hairstyles/" >Men’s Hairstyles—3 Classics and How to Do Them</a>
+      </div>
+    </div>
+    <div>
+      <img src="https://de927adv5b23k.cloudfront.net/wp-content/uploads/2020/04/27125721/Landscape-Canyon-Blog-Banner-1-1-150x150.jpg" />
+      <div>
+       <a href="https://www.urbancompany.com/blog/men/learn-how-to-trim-your-beard-at-home/" >Learn How to Trim Your Beard At Home!</a>
+      </div>
+    </div>
+    <div>
+      <img src="https://de927adv5b23k.cloudfront.net/wp-content/uploads/2019/12/24143730/best-beard-oil-1-150x150.jpg" />
+      <div>
+       <a href="https://www.urbancompany.com/blog/men/best-beard-oil-in-india/" >The Best Beard Oil In India</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
+<script>
+    document.querySelector("#beauty").addEventListener("change",handlebeauty)
+
+    function handlebeauty(){
+       selected=document.querySelector("#beauty").value
+       console.log(selected)
+       if(selected=="Hair care"){
+        window.location.href="https://www.urbancompany.com/blog/beauty/hair-care/"
+       } else if(selected=="Makeup"){
+        window.location.href="https://www.urbancompany.com/blog/beauty/make-up/"
+       } else if(selected=="Skin care"){
+        window.location.href="https://www.urbancompany.com/blog/beauty/skincare/"
+       }
+    }
+
+    document.querySelector("#men").addEventListener("change",handlemen)
+
+    function handlemen(){
+        selected=document.querySelector("#men").value;
+        if(selected=="Grooming"){
+            window.location.href="https://www.urbancompany.com/blog/men/men-grooming/"
+        } else if(selected=="Skin care"){
+            window.location.href="https://www.urbancompany.com/blog/men/men-skincare/"
+        } else if(selected=="Hair care"){
+            window.location.href="https://www.urbancompany.com/blog/men/men-haircare/"
+        }
+    }
+
+    document.querySelector("#interiors").addEventListener("change",handleinteriors)
+
+    function handleinteriors(){
+       selected=document.querySelector("#interiors").value
+       if(selected=="Decor & Style"){
+        window.location.href="https://www.urbancompany.com/blog/interiors/decor-style/"
+
+       } else if(selected=="Kitchens"){
+        window.location.href="https://www.urbancompany.com/blog/interiors/kitchens/"
+
+       } else if(selected=="Bathrooms"){
+        window.location.href="https://www.urbancompany.com/blog/interiors/bathrooms/"
+       
+      } else if(selected=="Bedrooms"){
+        window.location.href="https://www.urbancompany.com/blog/interiors/bedrooms/"
+
+      } else if(selected=="Living Rooms"){
+        window.location.href="https://www.urbancompany.com/blog/interiors/living-rooms/"
+      } else if(selected=="Dining Rooms"){
+        window.location.href="https://www.urbancompany.com/blog/interiors/dining-rooms/"
+      } else if(selected=="Other Areas"){
+        window.location.href="https://www.urbancompany.com/blog/interiors/other-areas/"
+      } else if(selected=="Real Home Tours"){
+        window.location.href="https://www.urbancompany.com/blog/interiors/real-home-tours/"
+      }
+    }
+   
+    document.querySelector("#lifestyle").addEventListener("change",handlelifestyle)
+
+    function handlelifestyle(){
+    
+      selected=document.querySelector("#lifestyle").value
+      
+      if(selected=="Health & Wellness"){
+        window.location.href="https://www.urbancompany.com/blog/lifestyle/health/"
+      } else if(selected=="Party"){
+        window.location.href="https://www.urbancompany.com/blog/lifestyle/party/"
+      } 
+    }
+  
+  
+</script>
