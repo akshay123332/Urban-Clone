@@ -96,7 +96,7 @@
         text-decoration: underline;
        }
 
-       #topmiddle{
+       #topmiddle,#midbottom{
         width:82vw;
        
         margin: auto;
@@ -108,8 +108,7 @@
        #sticky{
         width:20vw;
         margin-top: 20px;
-        
-      
+       
        
 
        }
@@ -128,7 +127,7 @@
          width:5px;
          height:60px;
       }
-      #wedintbox>div{
+      #wedintbox>div,#lifemenbox>div{
       width:30vw;
       height:auto;
     
@@ -137,11 +136,11 @@
       
 
       }
-      #wedintbox>div img{
+      #wedintbox>div img, #lifemenbox>div img{
         width:100%;
       }
 
-      #wedintbox{
+      #wedintbox,#lifemenbox{
         display: flex;
         height: auto;
       }
@@ -216,34 +215,86 @@
 
       }
 
-      #wedintbox a{
+      #wedintbox a,#lifemenbox a{
         color: black;
         font-size: 35px;
       }
-      #wedintbox a:hover{
+      #wedintbox a:hover,#lifemenbox a:hover{
         text-decoration: underline;
       }
 
-      #wedintbox p{
+      #wedintbox p,#lifemenbox p{
         font-size: 20px;
        
       }
 
-      #wedintbox h2{
+      #wedintbox h2, #lifemenbox h2{
         font-weight: bold;
         font-size: 35px;
       }
 
 
+     #midgrid,#bottom{
+       width:61vw;  
+        height:auto;
       
+        display: flex;
+        justify-content: space-between;
+        margin-left:8%;
+     }
+
+    #leftmid,#leftbottom{
+      width:30vw;
+      display: grid;
+      grid-template-columns: repeat(1,1fr);
+      grid-template-rows: repeat(4,150px);
+      gap: 10px;
+      
+    }
+
+    #rightmid,#rightbottom{
+      width:30vw;
+      display: grid;
+      grid-template-columns: repeat(1,1fr);
+      grid-template-rows: repeat(4,150px);
+      gap: 10px;
+    }
 
 
+    #leftmid>div,#rightmid>div,#leftbottom>div,#rightbottom>div{
+      display: flex;
+    }
 
+
+    #leftmid>div img, #rightmid>div img,#leftbottom> div img,#rightbottom> div img{
+      width:135px;
+      height:100px;
+      margin-right: 10px;
+    }
+
+    #leftmid>div a,#rightmid>div a,#leftbottom> div a,#rightbottom> div a{
+      color: black;
+      font-size: 20px;
+    }
+    
+    #leftmid>div a:hover,#rightmid>div a:hover,#leftbottom>div a:hover,#rightbottom>div a:hover{
+      text-decoration: underline;
+    }
+
+    #lifemenbox>div:nth-child(2) img{
+     margin-bottom: 80px;
+    }
+
+    #bottom{
+      margin-top: 20px;
+    }
+   
+    
     </style>
 </head>
 <body>
     <div id="tophead" >
-        <img src="https://de927adv5b23k.cloudfront.net/wp-content/uploads/2019/05/24170311/TheUrbanGuideLogo_UrbanCompany_Transparent_Big-Copy-Copy.png">
+        <img src="https://de927adv5b23k.cloudfront.net/wp-content/uploads/2019/05/24170311/TheUrbanGuideLogo_UrbanCompany_Transparent_Big-Copy-Copy.png"/>
         <div  >
             <img src="data:image/webp;base64,UklGRrACAABXRUJQVlA4WAoAAAAQAAAAhAAAhAAAQUxQSDEAAAARDzD/ERFCUSRJDZnnScC/q5NB5jmngIro/wToo66juFG9SAwebj8DF4nBRrWjqMgBAFZQOCBYAgAAcBEAnQEqhQCFAD6RRptJpaQioSsWSFCwEgljbt1e8Z0EVfpNPVxefZ7ay7oqdndSwxtPlYspRTcUAgANio9S1X8EUL2lCRsvCk64oAMXwpOZUc6ah1jLxpftQHXT0ji9/Y0lntMyRG/bA9Y7XgeKKI0cDr+qaEGv9RyUu9FS1ntPlWearS7K2djhCB3U2T0BOZPkgAD+7L/yA/81ZkOJ1O3scsRDFFKD7ovjMgKPdbUFhne/dCmCLmg18y8BUIYvXA2IDa7AgdQ9SM8suL3I87jstSq/e9bfmsLLKPa4nA+uDuFCcm+EmBCkzAPhACRqg6L7K0ldMhAzAeM1KFyAFyrjxqO19eC19xY5MAhCBRuCpJXGzJYALZ/mEsqxHOp4NSwjnNdDZf+jf+OUfPv9Tzb+E9QjvEX7Whg+qLjvusqSj7Wygx5u/p4q3lbEzmQ1a4Hif1oSjjzgV40200kcfmrYBhfKuEoQ7tNiBKLXzHbZLSHaB6adeaQe/Phs1S7FZ/dt5QFc70kwxQ2a/fU3Lfn40c3rrGqWH8YRGtt/YpALE46PRZTVJ41HCT6EUwsttaPcrNFo24dw0VKj3bllymWA5wjigFowvmLA/Ci1SIY8c19QT6mndvaoo4cMvXadEyORhdVPWyhM/RS/pgYCXX8tYWPpCWW4WBmwJunwfgMBDt9OXx+IpXehfRi06xOAT4gGwC4J0xgYgOoiXFgQ+jmu7Gf0qWJbfUdZVMJ3qQl5JasOb9+90j1jP3aXO+f3NbExvvcmqwFjg3SJoIxX3Nsa6IxkWAAA" alt="fb"/>
             <img src="data:image/png;base64,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" alt=""/>
@@ -408,7 +459,138 @@
    
  </div>
 
+ <div id="midgrid">
+  <div id="leftmid" >
+    <div>
+      <img src="https://de927adv5b23k.cloudfront.net/wp-content/uploads/2019/02/31161829/New-latest-green-floral-Mandap-decor-by-Bhoomi-wedding-planners-1-150x150.jpg" />
+     <div>
+      <a href="https://www.urbancompany.com/blog/weddings/mandap-decoration-foliage-trend/" > 7 Mandap Decor Designs Based On The Foliage & Greenery Trend</a>
+     </div>
+    </div>
+    <div>
+      <img src="https://de927adv5b23k.cloudfront.net/wp-content/uploads/2019/07/31160424/Minimal-bridal-makeup-150x150.jpg" />
+      <div>
+       <a href="https://www.urbancompany.com/blog/weddings/wedding-makeup/minimal-natural-bridal-makeup/" >5 Brides Who Chose To Go Super Minimal With Their Makeup & Looked Fabulous!</a>
+      </div>
+    </div>
+    <div>
+      <img src="https://de927adv5b23k.cloudfront.net/wp-content/uploads/2019/07/30164030/Sangeet-stage-decor-Altair-150x150.jpeg" />
+      <div>
+       <a href="https://www.urbancompany.com/blog/weddings/stage-decor-ideas-for-smaller-functions/" >Stage Decor Ideas for Smaller Functions (Engagement, Cocktail, Sangeet!)</a>
+      </div>
+    </div>
+    <div>
+      <img src="https://de927adv5b23k.cloudfront.net/wp-content/uploads/2019/05/30140554/Wedding-Stage-decor-outdoor-150x150.jpg" />
+      <div>
+       <a href="https://www.urbancompany.com/blog/weddings/best-stage-decoration-ideas/" >14 Best Stage Decoration Ideas For Indian Weddings!</a>
+      </div>
+    </div>
+  </div>
 
+  <div id="rightmid" >
+   <div>
+    <img src="https://de927adv5b23k.cloudfront.net/wp-content/uploads/2020/09/17134553/Untitled-design-2-1-150x150.jpg" />
+      <div>
+       <a href="https://www.urbancompany.com/blog/interiors/all-you-need-to-know-about-enamel-painting/" >All You Need to Know About Enamel Painting</a>
+      </div>
+   </div>
+   <div>
+    <img src="https://de927adv5b23k.cloudfront.net/wp-content/uploads/2020/09/14155712/Untitled-design-1-150x150.jpg" />
+      <div>
+       <a href="https://www.urbancompany.com/blog/interiors/wood-polishing-all-you-need-to-know/" >Wood Polishing: All You Need to Know</a>
+      </div>
+   </div>
+   <div>
+    <img src="https://de927adv5b23k.cloudfront.net/wp-content/uploads/2020/09/09230216/painting-150x150.jpg" />
+      <div>
+       <a href="https://www.urbancompany.com/blog/interiors/textured-walls-everything-you-need-to-know/" >Textured Walls: Everything You Need to Know</a>
+      </div>
+   </div>
+   <div>
+    <img src="https://de927adv5b23k.cloudfront.net/wp-content/uploads/2020/09/08173613/waterproof-150x150.jpg" />
+      <div>
+       <a href="https://www.urbancompany.com/blog/interiors/waterproofing-your-walls-all-you-need-to-know/" >Waterproofing Your Walls: All You Need to Know</a>
+      </div>
+   </div>
+  </div>
+ </div>
+
+<div id="midbottom" >
+  <div id="lifemenbox">
+  <div>
+    <h2>Lifestyle</h2>
+    <hr>
+    <img src="https://de927adv5b23k.cloudfront.net/wp-content/uploads/2020/08/25222436/Lotus-pose-1.jpg" alt="pic" />
+    <p>AUGUST 25, 2020</p>
+    <a href="https://www.urbancompany.com/blog/lifestyle/health/yoga-for-pcos-6-asanas-to-treat-pcos/" >Yoga for PCOS: 6 Asanas to Treat PCOS</a>
+    <p>Polycystic ovary syndrome (PCOS) is a common hormonal problem that affects 1 out of 10 women globally. However, did you know that yoga is a great way to treat PCOS and facilitate…</p>
+  </div>
+  <div>
+    <h2>Men</h2>
+    <hr>
+    <img src="https://de927adv5b23k.cloudfront.net/wp-content/uploads/2020/09/03122055/best-dandruff-shampoo-for-men-1024x459.jpg" alt="pic" />
+    <p>AUGUST 25, 2020</p>
+    <a href="https://www.urbancompany.com/blog/men/how-to-prevent-dandruff-in-men/" >How To Prevent Dandruff In Men</a>
+    <p>Dandruff is a common problem faced by people across the globe. Men are more frequent victims of this condition. Although the flaking of skin (particularly on the scalp) is the primary symptom, …</p>
+  </div>
+  </div>
+
+</div>
+
+<div id="bottom" >
+  <div id="leftbottom" >
+    <div>
+      <img src="https://de927adv5b23k.cloudfront.net/wp-content/uploads/2020/08/19164510/sarvangasana-150x150.jpg" />
+      <div>
+       <a href="https://www.urbancompany.com/blog/lifestyle/health/yoga-for-thyroid-different-asanas/" >Yoga for Thyroid: Different Asanas </a>
+      </div>
+    </div>
+    <div>
+      <img src="https://de927adv5b23k.cloudfront.net/wp-content/uploads/2020/08/12112509/anulom_vilom-150x150.jpg" />
+      <div>
+       <a href="https://www.urbancompany.com/blog/lifestyle/health/health-benefits-of-anulom-vilom-pranayama/" >Health Benefits of Anulom Vilom Pranayama</a>
+      </div>
+    </div>
+    <div>
+      <img src="https://de927adv5b23k.cloudfront.net/wp-content/uploads/2019/11/26170723/yoga-poses-to-150x150.jpg" />
+      <div>
+       <a href="https://www.urbancompany.com/blog/lifestyle/health/yoga-to-reduce-belly-fat/" >6 Yoga Asanas To Help You Burn Your Belly Fat</a>
+      </div>
+    </div>
+    <div>
+      <img src="https://de927adv5b23k.cloudfront.net/wp-content/uploads/2019/11/26132622/intermittent-fasting-women-150x150.jpg" />
+      <div>
+       <a href="https://www.urbancompany.com/blog/lifestyle/health/intermittent-fasting-for-women/" >Is Intermittent Fasting Safe For Women?</a>
+      </div>
+    </div>
+  </div>
+  <div id="rightbottom" >
+    <div>
+      <img src="https://de927adv5b23k.cloudfront.net/wp-content/uploads/2020/08/31123544/gettyimages-181879127-1589643370-150x150.jpg" />
+      <div>
+       <a href="https://www.urbancompany.com/blog/men/mens-hair-colouring-home-or-salon/" >Men’s Hair Colouring: Home or Salon?</a>
+      </div>
+    </div>
+    <div>
+      <img src="https://de927adv5b23k.cloudfront.net/wp-content/uploads/2020/08/27114437/90426618_154256686052525_1736364692824191085_n-150x150.jpg" />
+      <div>
+       <a href="https://www.urbancompany.com/blog/men/3-classic-mens-hairstyles/" >Men’s Hairstyles—3 Classics and How to Do Them</a>
+      </div>
+    </div>
+    <div>
+      <img src="https://de927adv5b23k.cloudfront.net/wp-content/uploads/2020/04/27125721/Landscape-Canyon-Blog-Banner-1-1-150x150.jpg" />
+      <div>
+       <a href="https://www.urbancompany.com/blog/men/learn-how-to-trim-your-beard-at-home/" >Learn How to Trim Your Beard At Home!</a>
+      </div>
+    </div>
+    <div>
+      <img src="https://de927adv5b23k.cloudfront.net/wp-content/uploads/2019/12/24143730/best-beard-oil-1-150x150.jpg" />
+      <div>
+       <a href="https://www.urbancompany.com/blog/men/best-beard-oil-in-india/" >The Best Beard Oil In India</a>
+      </div>
+    </div>
+  </div>
+</div>
 
 </body>
 </html>
